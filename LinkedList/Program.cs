@@ -16,7 +16,7 @@ namespace LinkedList
             list.AddLast(56);
             list.AddLast(30);
             list.AddLast(70);
-
+            list.Display();
             Console.ReadLine();
         }
     }

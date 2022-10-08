@@ -25,7 +25,20 @@ namespace LinkedList
                 temp.Next = node;
             }
 
-            Console.WriteLine("{0} is inserted in Linked List",node.data);
+            //Console.WriteLine("{0} is inserted in Linked List",node.data);
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Here's Elements in Linked List");
+            Node temp = this.Head;
+            if (temp == null)
+                Console.WriteLine("list is Empty");
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + " ");
+                temp= temp.Next;
+            }
         }
     }
 }
