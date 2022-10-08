@@ -34,6 +34,11 @@ namespace LinkedList
             Head = newnode;
         }
 
+        public void Append(int data)
+        {
+            AddLast(data);
+        }
+
         public void Display()
         {
             Console.WriteLine("Here's Elements in Linked List");
