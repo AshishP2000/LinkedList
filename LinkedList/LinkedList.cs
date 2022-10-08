@@ -27,6 +27,12 @@ namespace LinkedList
 
             //Console.WriteLine("{0} is inserted in Linked List",node.data);
         }
+        public void AddFirst(int data)
+        {
+            Node newnode = new Node(data);
+            newnode.Next = Head;
+            Head = newnode;
+        }
 
         public void Display()
         {
