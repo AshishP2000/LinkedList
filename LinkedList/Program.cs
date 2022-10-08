@@ -10,7 +10,7 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC-2 Ability to create Linked List by adding 30 and 56 to 70
+            //UC-3 Ability to create Linked List by Appending
             Console.WriteLine("Welcome to Linked List Program");
 
             LinkedList list = new LinkedList();
