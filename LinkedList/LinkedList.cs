@@ -70,6 +70,15 @@ namespace LinkedList
 
         }
 
+        public void RemoveFirst()
+        {
+            if (Head == null)
+                Console.WriteLine("List is Empty");
+            else
+                Console.WriteLine("{0} is Removed", Head.data);
+            Head = Head.Next;
+        }
+
         public void Display()
         {
             Console.WriteLine("Here's Elements in Linked List");

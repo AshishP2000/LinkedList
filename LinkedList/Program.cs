@@ -10,7 +10,7 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC-4 Ability to insert at Position
+            //UC-5 Ability to remove first element
             Console.WriteLine("Welcome to Linked List Program");
 
             LinkedList list = new LinkedList();
@@ -27,6 +27,10 @@ namespace LinkedList
             list.Append(70);
 
             list.InsertatPosition(2,30);
+
+
+            list.RemoveFirst();
+
             list.Display();
             Console.ReadLine();
         }
