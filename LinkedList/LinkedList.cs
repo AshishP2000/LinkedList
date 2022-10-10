@@ -39,6 +39,37 @@ namespace LinkedList
             AddLast(data);
         }
 
+        public Node InsertatPosition(int position,int data)
+        {
+            if (position < 1)
+                Console.WriteLine("Invalid Position");
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.Next = Head;
+                Head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.Next = this.Head.Next;
+                        Head.Next = node;
+                        break;
+                    }
+                }
+                if (position != 1)
+                {
+                    Console.WriteLine("Position out of range");
+                }
+            }
+            return Head;
+
+        }
+
         public void Display()
         {
             Console.WriteLine("Here's Elements in Linked List");

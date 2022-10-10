@@ -10,7 +10,7 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC-3 Ability to create Linked List by Appending
+            //UC-4 Ability to insert at Position
             Console.WriteLine("Welcome to Linked List Program");
 
             LinkedList list = new LinkedList();
@@ -23,8 +23,10 @@ namespace LinkedList
             //list.AddFirst(56);
 
             list.Append(56);
-            list.Append(30);
+            //list.Append(30);
             list.Append(70);
+
+            list.InsertatPosition(2,30);
             list.Display();
             Console.ReadLine();
         }
