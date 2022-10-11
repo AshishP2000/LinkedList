@@ -101,6 +101,38 @@ namespace LinkedList
             
         }
 
+        public void Search(int data)
+        {
+            int count=0;
+            Node temp = Head;
+            bool isFound = false;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+
+                while (temp != null)
+                {
+                    if (data == temp.data)
+                    {
+                        Console.Write("{0} Given Node is present", data);
+                        Console.WriteLine(" at the position of {0}", count + 1);
+                        isFound = true;
+                        
+                    }
+                    temp = temp.Next;
+                    count++;
+                    
+                }
+                if (!isFound)
+                {
+                    Console.WriteLine("{0} Node is not Present", data);
+                }
+            }
+        }
+
         public void Display()
         {
             Console.WriteLine("Here's Elements in Linked List");

@@ -10,7 +10,7 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC-6 Ability to remove Last element
+            //UC-7 Ability to search Linked list to find node with value 30
             Console.WriteLine("Welcome to Linked List Program");
 
             LinkedList list = new LinkedList();
@@ -29,7 +29,9 @@ namespace LinkedList
             list.InsertatPosition(2,30);
 
 
-            list.RemoveLast();
+            //list.RemoveLast();
+
+            list.Search(30);
 
             list.Display();
             Console.ReadLine();
