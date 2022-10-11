@@ -79,6 +79,28 @@ namespace LinkedList
             Head = Head.Next;
         }
 
+        public void RemoveLast()
+        {
+            Node temp = Head;
+            if (Head == null)
+                Console.WriteLine("List is Empty");
+            if (temp.Next == null)
+            {
+                temp = null;
+            }
+            else
+            {
+                while (temp.Next.Next != null)
+                {
+                    temp = temp.Next;
+                    Console.WriteLine("{0} is Removed", temp.Next.data);
+                }
+                temp.Next = null;
+
+            }
+            
+        }
+
         public void Display()
         {
             Console.WriteLine("Here's Elements in Linked List");

@@ -10,7 +10,7 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC-5 Ability to remove first element
+            //UC-6 Ability to remove Last element
             Console.WriteLine("Welcome to Linked List Program");
 
             LinkedList list = new LinkedList();
@@ -29,7 +29,7 @@ namespace LinkedList
             list.InsertatPosition(2,30);
 
 
-            list.RemoveFirst();
+            list.RemoveLast();
 
             list.Display();
             Console.ReadLine();
