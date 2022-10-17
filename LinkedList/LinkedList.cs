@@ -103,7 +103,7 @@ namespace LinkedList
 
         public void Search(int data)
         {
-            int count=0;
+            int count=0,count1=0;
             Node temp = Head;
             bool isFound = false;
             if (temp == null)
@@ -118,8 +118,11 @@ namespace LinkedList
                     if (data == temp.data)
                     {
                         Console.Write("{0} Given Node is present", data);
-                        Console.WriteLine(" at the position of {0}", count + 1);
+                        count1 = count + 1;
+                        Console.WriteLine(" at the position of {0}", count1);
+                        
                         isFound = true;
+
                         
                     }
                     temp = temp.Next;
@@ -131,6 +134,24 @@ namespace LinkedList
                     Console.WriteLine("{0} Node is not Present", data);
                 }
             }
+        }
+
+        public void InsertAfter(int data,int pos)
+        {
+            Node current = Head;
+            pos= pos - 2;
+            for (int i = 0; i < pos; i++)
+            {
+                current = current.Next;
+                if (current == null)
+                {
+                    Console.WriteLine("Out range");
+                    return;
+                }
+            }
+            Node New = new Node(data); 
+            New.Next = current.Next;
+            current.Next = New;
         }
 
         public void Display()
